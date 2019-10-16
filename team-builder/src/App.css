@@ -1,22 +1,55 @@
 .App {
   text-align: center;
+  
 }
 
-.App-logo {
-  height: 40vmin;
+.title {
+  color: MediumSeaGreen; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+label {
+  color: mediumblue;
+}
+
+input {
+  width: 200px;
+  padding: 15px 22px;
+  margin: 10px 5px;
+  box-sizing: border-box;  
+  border: 1px solid MediumSeaGreen;
+  border-radius: 4px;
+}
+
+form {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-flow: column nowrap;
+}
+
+button {
+  background-color: mediumseagreen;
+  border: 1px solid mediumblue;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #191919;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.12), 0 2px 2px 1px rgba(0, 0, 0, 0.24);
+  transition: all 0.2 ease-in;
+}
+
+.member-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.member {
+  background-color: mediumblue;
+  box-shadow: 0 5px 10px black;
+  width: 100%;
+  max-width: 250px;
+  padding: 10px;
+  margin: 15px auto;
+  /* text-align: left; */
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
-}
+

@@ -13,7 +13,7 @@ function App() {
   }
   return (
     <div className="App">
-      <h1>My Team</h1>
+      <h1 className="title">My Team Members</h1>
       <Form addNewMember={addNewMember} />
       <Members membersList={members} />
       
