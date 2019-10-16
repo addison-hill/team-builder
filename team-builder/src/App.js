@@ -29,6 +29,10 @@ function App() {
   const addNewMember = member => {
     setMembers([...members, member])
   }
+
+  const memberToEdit = () => {
+    
+  }
   return (
     <div className="App">
       <h1 className="title">Dallas Cowboys</h1>
