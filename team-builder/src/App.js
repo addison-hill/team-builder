@@ -6,14 +6,32 @@ import Members from "./Components/Members";
 import './App.css';
 
 function App() {
-  const [members, setMembers] = useState([])
+  const [members, setMembers] = useState([
+    {
+      name: "Addison Hill",
+      email: "adddison.hill@gmail.com",
+      role: "Gamer, Entrepreneur, Coding Genius"
+    },
+
+    {
+      name: "Dak Prescott",
+      email: "dakattack@gmail.com",
+      role: "Quarterback"
+    },
+
+    {
+      name: "Ezekial Elliot",
+      email: "zekeeats@gmail.com",
+      role: "Running Back"
+    }
+  ])
 
   const addNewMember = member => {
     setMembers([...members, member])
   }
   return (
     <div className="App">
-      <h1 className="title">My Team Members</h1>
+      <h1 className="title">Dallas Cowboys</h1>
       <Form addNewMember={addNewMember} />
       <Members membersList={members} />
       
