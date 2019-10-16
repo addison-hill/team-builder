@@ -29,8 +29,26 @@ const Form = props => {
                 value={member.name}
             /><br />
             <label htmlFor="email">Email</label>
-
+            <input 
+                name="email"
+                id="email"
+                type="text"
+                placeholder="email"
+                onChange={changeHandler}
+                value={member.email}
+            /><br />
+            <label htmlFor="role">Role</label>
+            <input 
+                name="role"
+                id="role"
+                type="text"
+                placeholder="role"
+                onChange={changeHandler}
+                value={member.role}
+            /><br />
+            <button type="submit">Add Team Member</button>
         </form>
-    )
-}
+    );
+};
+
 export default Form

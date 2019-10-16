@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <h1>My Team</h1>
       <Form addNewMember={addNewMember} />
-      {/* <Members membersList={members} /> */}
+      <Members membersList={members} />
       
     </div>
   );
